@@ -17,8 +17,8 @@ export default class Simulation {
 
         this.engine.resources.on('ready', () => {
             this.floor = new Floor(engine);
-            // this.fox = new Fox(engine);
-            this.fox1 = new Model3D(engine, 'foxModel', 'fox2', { scale: 0.02 });
+            this.fox = new Fox(engine);
+            // this.fox1 = new Model3D(engine, 'foxModel', 'fox2', { scale: 0.02 });
             this.environment = new Environment(engine);
         });
     }
